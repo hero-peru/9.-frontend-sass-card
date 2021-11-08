@@ -1,0 +1,116 @@
+/*----- FUNCTION -----*/
+
+$cardm-ruta-photo:"../image/";
+
+$cardm-photo_1:"pizza.png";
+$cardm-photo_2:"tortellini.png";
+$cardm-photo_3:"cake.png";
+
+$cardlarge-photo_1:"montreal.png";
+$cardlarge-photo_2:"bali.png";
+
+$cardm_detail_color_icon_leaf:#2ECC71;
+$cardm_detail_color_icon_fire:#F8593B;
+$cardm_detail_color_icon_rama:#FFC22B;
+$cardm_detail_color_icon_wifi:#007AE9;
+$cardm_detail_color_icon_restaurant:#007AE9;
+$cardm_detail_color_icon_swimmer:#007AE9;
+
+$cardm_detail_color_fondo_icon:#fff;
+
+$cardm_width:360px;
+$cardm_heigth:528px;
+$cardm_image_heigth:216px;
+$cardm_detail_heigth:312px;
+
+$cardlarge_left_width:512px;
+$cardlarge_left_heigth:auto;//716px
+$cardlarge_left_image_heigth:256px;
+$cardlarge_left_detail_heigth:auto;//460px
+
+$cardlarge_right_width:608px;
+$cardlarge_right_heigth:auto;//716px
+$cardlarge_right_image_heigth:256px;
+$cardlarge_right_detail_heigth:auto;//460px
+
+@mixin card_dimension($tipo) {
+    @if ($tipo=="m"){
+        width: $cardm_width;
+        height: $cardm_heigth;
+    }@else if ($tipo=="l-l"){
+        width: $cardlarge_left_width;
+        height: $cardlarge_left_heigth;
+    }@else {
+        width: $cardlarge_right_width;
+        height: $cardlarge_right_heigth;
+    }
+}
+
+@mixin card_image_detail_dimension($tipo) {
+    @if ($tipo=="m-i"){        
+        height: $cardm_image_heigth;
+    }@else if ($tipo=="m-d"){
+        height: $cardm_detail_heigth;
+    }@else if ($tipo=="l-l-i"){
+        height: $cardlarge_left_image_heigth;
+    }@else if ($tipo=="l-l-d"){
+        height: $cardlarge_left_detail_heigth;
+    }@else if ($tipo=="l-r-i"){
+        height: $cardlarge_right_image_heigth;
+    }@else if ($tipo=="l-r-d"){
+        height: $cardlarge_right_detail_heigth;
+    }
+}
+
+
+@mixin cardm-image-photo($imagen) {
+    @if ($imagen==1) {
+        background: url("#{$cardm-ruta-photo}#{$cardm-photo_1}");
+    }@else if ($imagen==2) {
+        background: url("#{$cardm-ruta-photo}#{$cardm-photo_2}");
+    }@else {
+        background: url("#{$cardm-ruta-photo}#{$cardm-photo_3}");
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin cardlarge-image-photo($imagen) {
+    @if ($imagen==1) {
+        background: url("#{$cardm-ruta-photo}#{$cardlarge-photo_1}");
+    }@else{
+        background: url("#{$cardm-ruta-photo}#{$cardlarge-photo_2}");
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    width: 100%;
+    height: 100%;    
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;   
+}
+
+%cardm-image-icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;               
+    border-radius: 16px;
+    top: 16px;
+    right: 24px;
+}
+
+%cardm-detail-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    border-radius: 16px;
+    background-color: #fff; 
+}

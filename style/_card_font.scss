@@ -1,0 +1,80 @@
+/*----- CARD - FONTS -----*/
+
+%font-cardm-detail-title{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 1%;
+}
+
+%font-cardm-detail-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6E798C;
+}
+
+%font-cardm-detail-extra{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+%font-cardm-detail-price{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 25px;
+}
+
+%font-cardm-detail-price-not{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration-line: line-through ;
+}
+
+%font-cardm-detail-button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 18%;
+}
+
+%font-cardlarge-detail-price{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 25px;
+    letter-spacing: 2%;
+}
+
+%font-cardlarge-detail-price{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;    
+    line-height: 25px;
+    letter-spacing: 2%;
+}
+
+%font-cardlarge-detail-price-not{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 2%;
+    text-decoration-line: line-through ;
+}

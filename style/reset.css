@@ -1,0 +1,11 @@
+/*----- SELECTORES RESET -----*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #c4c4c4;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}

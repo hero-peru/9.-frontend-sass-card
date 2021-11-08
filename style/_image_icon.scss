@@ -1,0 +1,74 @@
+/*----- IMAGE - ICONS -----*/
+
+.image--photo1{
+    @include cardm-image-photo(1);            
+}
+
+.image--photo2{
+    @include cardm-image-photo(2);
+}
+
+.image--photo3{
+    @include cardm-image-photo(3);
+}
+
+.image--photo4{
+    @include cardlarge-image-photo(1);
+}
+
+.image--photo5{
+    @include cardlarge-image-photo(2);
+}
+
+.image--icon{            
+    @extend %cardm-image-icon;
+    background-color: #fff; 
+}
+
+.image--icon--large{
+    @extend %cardm-image-icon;
+    color: #fff;
+    font-size: 24px;
+}
+
+.image--icon--large--red{
+    @extend %cardm-image-icon;
+    color: #F8593B;
+    font-size: 24px;
+}
+
+.detail--icon--leaf{
+    @extend %cardm-detail-icon;
+    background-color:$cardm_detail_color_icon_leaf;
+    color: $cardm_detail_color_fondo_icon;
+}
+
+.detail--icon--fire{
+    @extend %cardm-detail-icon;
+    background-color:$cardm_detail_color_icon_fire;
+    color: $cardm_detail_color_fondo_icon;
+}
+
+.detail--icon--rama{
+    @extend %cardm-detail-icon;
+    background-color:$cardm_detail_color_icon_rama;
+    color: $cardm_detail_color_fondo_icon;
+}
+
+.detail--icon--wifi{
+    @extend %cardm-detail-icon;
+    background-color:$cardm_detail_color_icon_wifi;
+    color: $cardm_detail_color_fondo_icon;
+}
+
+.detail--icon--restaurant{
+    @extend %cardm-detail-icon;
+    background-color:$cardm_detail_color_icon_restaurant;
+    color: $cardm_detail_color_fondo_icon;
+}
+
+.detail--icon--swimmer{
+    @extend %cardm-detail-icon;
+    background-color:$cardm_detail_color_icon_swimmer;
+    color: $cardm_detail_color_fondo_icon;
+}
